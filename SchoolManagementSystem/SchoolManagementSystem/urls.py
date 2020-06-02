@@ -21,6 +21,6 @@ from SchoolManagementSystem import settings
 from student_management_app import views
 urlpatterns = [
                   path('admin/', admin.site.urls),
-                  path('demo/', views.index),
+                  path('', views.index),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL,
                                                                                          document_root=settings.STATIC_ROOT)
